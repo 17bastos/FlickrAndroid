@@ -11,7 +11,7 @@
 
 
 ## Improvements TODO ##
-Considering the timebox for complete this test, there are a lot of improvements to do. For example:
+Considering the timebox to complete this test, there are a lot of improvements to do:
 - Improve UI design
 - Improve the project organization
 - Add accessibility features

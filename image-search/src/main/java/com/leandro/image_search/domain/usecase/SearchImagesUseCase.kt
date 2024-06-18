@@ -5,6 +5,7 @@ import com.leandro.image_search.domain.model.Image
 
 internal class SearchImagesUseCase(private val imageDataSource: SearchImageDataSource) {
     suspend operator fun invoke(search: String): List<Image> {
-        return imageDataSource.searchImages(search)
+        val regex = Regex("\\s+")
+        return imageDataSource.searchImages(search.replace(regex, ","))
     }
 }
